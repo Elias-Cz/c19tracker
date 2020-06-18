@@ -20,27 +20,23 @@ input {
   font-size: 20px;
 }
 
+.nav {
+  display: flex;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
 .search {
-  display: block;
-  text-align: center;
 }
 
 .row {
-  display: block;
+  display: flex;
   text-align: center;
   background-color: white;
 }
 
 .column {
+  flex: 50%;
   background-color: grey;
-}
-
-.left {
-  width: 30%;
-}
-
-.right {
-  width: 70%;
-  background-color: darkgrey;
-  padding: 20px;
 }
