@@ -1,95 +1,46 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1 {
-  margin: 5px;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  color: #FFFFFF
-}
-
-body {
-  background-image: url('COVID-19-CDC.png');
-  background-size: cover;
-  background-position: top center;
-  max-width: inherit;
-}
-
-.box2 {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  min-width: 375px;
-  background:rgba(0, 0, 0, 0.8);
-}
-
-.wrapper {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
   font-family: sans-serif;
 }
 
+html {
+  background: url('c19.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 input {
-  align-items: center;
-  width: 100%;
-  max-width: 280px;
-  padding: 10px 15px;
-  border: none;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 16px 0px 16px 0px;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
-  color: #313131;
+  margin: 20px;
+  border-radius: 2px 8px 2px 8px;
+  background-color: grey;
+  color: white;
+  height: 35px;
+  width: 30%;
   font-size: 20px;
-  font-weight: 300;
-  transition: 0.2s ease-out;
 }
 
-input:focus {
-  background-color: rgba(255, 255, 255, 0.6)
+.search {
+  display: block;
+  text-align: center;
 }
 
-.boxed {
-    flex:1 1 100%;
-    padding: 10px 10px 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 500;
-    color: #FFFFFF;
-
+.row {
+  display: block;
+  text-align: center;
+  background-color: white;
 }
 
-span {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: left;
-  font-size: 20px;
-  font-weight: 400;
-  min-width: 100px;
-  background:rgba(255, 255, 255, 0.6);
-  padding: 10px;
-  border: 3px solid gray;
-  margin: 10px;
-  box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 255);
+.column {
+  background-color: grey;
 }
 
-.api-ref {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+  background-color: darkgrey;
+  padding: 20px;
 }

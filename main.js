@@ -1,12 +1,11 @@
 // adds the enter key to be used by the search box
-const searchbox = document.querySelector('.search-box');
+const searchbox = document.querySelector('.searchbox');
 searchbox.addEventListener('keypress', setQuery);
 
 function setQuery(evt) {
   if (evt.keyCode == 13) {
     getData(searchbox.value);
     console.log(searchbox.value)
-
   }
 }
 // gets data from api

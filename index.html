@@ -2,26 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C19Tracker</title>
     <link rel="stylesheet" href="main.css">
-    <title>C19 cases</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="box2">
-      <h1>TOTAL COVID-19 CASES
-        <input type="text" name="country"class="search-box"placeholder="Search for a country..."></input>
-    <!--<button type="button" name="search">search</button>-->
-    </h1>
-      <main>
-        <div class="boxed">Country: <span id="country"></span></div>
-        <div class="boxed">Deaths: <span id="deaths"></span></div>
-        <div class="boxed">Confirmed: <span id="confirmed"></span><br/></div>
-        <div class="boxed">Recovered: <span id="recovered"></span><br/></div>
-        <div class="api-ref"><a href="https://covid19api.com/">Api link</a><br/></div>
-      </main>
+
+    <div class="row">
+      <div class="search">
+        <input type="text" class="searchbox" placeholder="Enter a country..">
+      </div>
+      <div class="column">
+        <h3>Cases by country:</h3>
+        <div id="country"></div>
+      </div>
+      <div class="column">
+        Deaths<div id="deaths"></div>
+        Confirmed<div id="confirmed"></div>
+        Recovered<div id="recovered"></div>
+      </div>
     </div>
-    </div>
-    <script src="main.js"></script>
+
   </body>
+  <script type="text/javascript" src="main.js">
+  </script>
 </html>
