@@ -2,41 +2,126 @@
   font-family: sans-serif;
 }
 
-html {
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+
+input {
+  margin: 20px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: lightgrey;
+  color: black;
+  height: 35px;
+  width:90%;
+  font-size: 20px;
+  -webkit-box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.27);
+  -moz-box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.27);
+  box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.27);
+  max-width: 300px;
+}
+
+input:focus {
+  outline: none;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.58);
+  -moz-box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.58);
+  box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.58);
+  transition-duration: 0.5s;
+}
+
+hr {
+  width: 50%;
+  height: 1px;
+  background-color: grey;
+}
+
+.row {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 70%;
   background: url('c19.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-input {
-  margin: 20px;
-  border-radius: 2px 8px 2px 8px;
-  background-color: grey;
-  color: white;
-  height: 35px;
-  width: 30%;
-  font-size: 20px;
-}
-
-.nav {
   display: flex;
-  background-color: black;
-  color: white;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  margin: auto;
+}
+
+.info {
+  height: auto;
+  width: 50%;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.right {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  margin: auto;
 }
 
 .search {
+  display: inline-block;
 }
 
-.row {
-  display: flex;
-  text-align: center;
-  background-color: white;
+.data {
+  height: auto;
+  width: 100%;
+  padding: 10px;
 }
 
-.column {
-  flex: 50%;
-  background-color: grey;
+@media(max-width: 900px) {
+  .row {
+    display: inline-block;
+    background: url('c19.png') no-repeat center center;
+    width: 100%;
+  }
+
+  .column {
+    float: none;
+    width: 100%;
+  }
+
+  .left {
+    width: 50%;
+    background: none;
+    height: auto;
+    width: 100%;
+
+
+  }
+
+  .right {
+    width: 50%;
+    background: none;
+    height: auto;
+
+  }
+
+  input {
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }

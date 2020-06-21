@@ -20,12 +20,20 @@ async function getData() {
 console.log(result[result.length - 1].Deaths);
 console.log(result[result.length - 1].Confirmed);
 console.log(result[result.length - 1].Recovered);
+console.log(result[result.length - 1].Date);
+
+const months = ["JANUARY", "FEBRUARY", "MARCH","APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"]
+let latest = result[result.length - 1].Date
+let current_month = months[latest[5, 6] -1]
+console.log(current_month)
+let date = latest[latest.length -12] + latest[latest.length -11]
 
 //displays the data for the user
 document.getElementById("country").textContent = [searchbox.value];
 document.getElementById("deaths").textContent = result[result.length - 1].Deaths;
 document.getElementById("confirmed").textContent = result[result.length - 1].Confirmed;
 document.getElementById("recovered").textContent = result[result.length - 1].Recovered;
+document.getElementById("date").textContent = current_month + " " + date;
 }
 
 //getData()

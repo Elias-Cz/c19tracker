@@ -3,25 +3,40 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C19Tracker</title>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="nav">
-      <h3>Coronavirus Stat Tracker</h3>
-    <div class="search">
-      <input type="text" class="searchbox" placeholder="Enter a country..">
-    </div>
-    </div>
     <div class="row">
-      <div class="column">
-        <h3>Cases by country:</h3>
-        <div id="country"></div>
+      <div class="column left">
+        <div class="info">
+          <h3>What is Covid-19?</h3>
+            COVID-19 is the disease caused by the new coronavirus
+            that emerged in China in December 2019. COVID-19 symptoms
+            include cough, fever, shortness of breath, muscle aches,
+            sore throat, unexplained loss of taste or smell, diarrhea
+            and headache. COVID-19 can be severe, and some cases have
+            caused death. All data sourced from https://covid19api.com/.
+        </div>
+
       </div>
-      <div class="column">
-        Deaths<div id="deaths"></div>
-        Confirmed<div id="confirmed"></div>
-        Recovered<div id="recovered"></div>
+      <div class="column right">
+        <div class="data">
+          Deaths<div id="deaths"></div>
+          <hr>
+          Confirmed<div id="confirmed"></div>
+          <hr>
+          Recovered<div id="recovered"></div>
+          <hr>
+          <h3>Cases by country:</h3>
+          <div id="country"></div>
+
+          <input type="text" class="searchbox" placeholder="Enter a country..">
+          <br>
+          As of:
+          <div id="date"></div>
+        </div>
       </div>
     </div>
 
