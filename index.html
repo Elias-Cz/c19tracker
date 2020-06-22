@@ -7,7 +7,8 @@
     <title>C19Tracker</title>
     <link rel="stylesheet" href="main.css">
   </head>
-  <body>
+  <body onload="pageLoader()">
+    <div class="load"></div>
     <div class="row">
       <div class="column left">
         <div class="info">
@@ -15,32 +16,28 @@
             COVID-19 is the disease caused by the new coronavirus
             that emerged in China in December 2019. COVID-19 symptoms
             include cough, fever, shortness of breath, muscle aches,
-            sore throat, unexplained loss of taste or smell, diarrhea
+            sore throat, unexplained loss of taste or smell,
             and headache. COVID-19 can be severe, and some cases have
             caused death. All data sourced from https://covid19api.com/.
         </div>
-
       </div>
       <div class="column right">
         <div class="data">
-          Deaths<div id="deaths"></div>
+          <h3>Deaths:</h3><div id="deaths"></div>
           <hr>
-          Confirmed<div id="confirmed"></div>
+          <h3>Confirmed:</h3><div id="confirmed"></div>
           <hr>
-          Recovered<div id="recovered"></div>
+          <h3>Recovered:</h3><div id="recovered"></div>
           <hr>
           <h3>Cases for:</h3>
-          <div id="country"></div>
+          <h2 id="country"></h2>
           <input type="text" class="searchbox" placeholder="Enter a country..">
-
           <br>
           As of:
-          <div id="date"></div>
+          <h3 id="date"></h3>
         </div>
       </div>
     </div>
-
   </body>
-  <script type="text/javascript" src="main.js">
-  </script>
+  <script type="text/javascript" src="main.js"></script>
 </html>
