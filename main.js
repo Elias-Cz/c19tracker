@@ -5,8 +5,13 @@ function pageLoader() {
 }
 
 function showPage() {
+  if (window.innerWidth < 900) {
+    document.querySelector('.row').style.display = "inline-block"
+    document.querySelector('.load').style.display = "none"
+  } else {
   document.querySelector('.row').style.display = "flex"
   document.querySelector('.load').style.display = "none"
+}
 }
 
 // adds the enter key to be used by the search box
