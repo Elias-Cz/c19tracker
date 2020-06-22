@@ -178,4 +178,21 @@ button {
     margin-bottom: 20px;
   }
 
+  .load {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    margin: -40px 0 0 -40px;
+    border: 10px solid #dcdcdc;
+    border-radius: 50%;
+    border-top: 10px solid #B22222;
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
 }
